@@ -1,12 +1,189 @@
 <!DOCTYPE html>
-<html>
+<html lang= "en-us">
 <head>
-<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Team Profile Name</title>
+<style>
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 15%;
+  margin-bottom: 2%;
+  margin-left: 8%;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .column {
+    width: 100%;
+    display: block;
+  }   
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+body {
+	background-image: url('images/binarybackground.jpeg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+}
+h1 {
+	font-size: 50px;
+	font-family: verdana;
+	text-align:center;	
+	color: white;
+}
+p {
+	color: white;
+	font-family: courier;
+}
+
+.sidenav {
+	width: 150px;
+	position: sticky;
+	z-index: 1;
+	top: 50%;
+	left: 0;
+	background:transparent;
+	overflow-x: hidden;
+	padding: 8px 0;
+}
+
+.sidenav a {
+	padding : 6px 8px 6px 16px;
+	text-decoration: none;
+	font-size: 15px;
+	color: white;
+	display: block;
+}
+
+.sidenav a:hover {
+	color: #04d9ff;
+}
+</style>
 </head>
 <body>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+<h1>Team Name</h1>
+<p>Please add description</p>
+<br>
 
+<div class="sidenav">
+
+	<a href="index.html" target="_parent">Home</a>
+	<a href="Team Profile.html" target="_parent">Team Profile</a>
+	<a href="Interest in IT.html">Interests in IT</a>
+	<a href="Ideal Job.html">Ideal Job</a>
+	<a href="Project Idea.html">Project Idea</a>
+</div>
+
+<div class="row";>
+  <div class="column">
+    <div class="card">
+      <img src="images/jjohnston.jpg" alt="" style="width:100%; border-radius: 60%;">
+      <div class="container">
+        <h2 style="color: white;">Jared Johnston</h2>
+        <p class="title">Student</p>
+        <p>Fill in Desription</p>
+        <p>s3644491@student.rmit.edu.au</p>
+        <p><button class="button">View Profile</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/anikoliouk.jpg" alt="" style="width:100%; border-radius: 60%;">
+      <div class="container">
+        <h2 style="color: white;">Alexandre Nikoliouk</h2>
+        <p class="title">Student</p>
+        <p>Fill in Desription</p>
+        <p>########@student.rmit.edu.au</p>
+        <p><button class="button">View Profile</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/aryan.jpg" alt="" style="width:100%; border-radius: 60%;">
+      <div class="container">
+        <h2 style="color: white;">Aidan Ryan</h2>
+        <p class="title">Student</p>
+        <p>Fill in Desription</p>
+        <p>########@student.rmit.edu.au</p>
+        <p><button class="button">View Profile</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/esandberg.png" alt="" style="width:100%; border-radius: 60%;">
+      <div class="container">
+        <h2 style="color: white;">Eric Sandberg</h2>
+        <p class="title">Student</p>
+        <p>Fill in Desription</p>
+        <p>########@student.rmit.edu.au</p>
+        <p><button class="button">View Profile</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images/mbroodryk.jpg" alt="" style="width:100%; border-radius: 60%;">
+      <div class="container">
+        <h2 style="color: white;">Marcus Broodryk</h2>
+        <p class="title">Student</p>
+        <p>Fill in Desription</p>
+        <p>########@student.rmit.edu.au</p>
+        <p><button class="button">View Profile</button></p>
+      </div>
+    </div>
+  </div>
+  
 </body>
 </html>
