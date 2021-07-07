@@ -1,97 +1,108 @@
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
-*, *:before, *:after {
-	box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 .column {
-  float: left;
-  width: 15%;
-  margin-bottom: 2%;
-  margin-left: 8%;
-  padding: 0 8px;
+    float: left;
+    width: 15%;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    padding: 0 8px;
 }
 
 @media screen and (max-width: 650px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-  .column {
-    width: 100%;
-    display: block;
-  }   
+    .column {
+        width: 100%;
+        display: block;
+    }
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 .container {
-  padding: 0 16px;
+    padding: 0px 16px;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .title {
-  color: grey;
+    color: grey;
 }
 
 .button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
 }
 
 .button:hover {
-  background-color: #555;
+    background-color: #555;
 }
 
 body {
-	background-image: url('images/binarybackground.jpeg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;  
-	background-size: cover;
+    background-image: url('images/binarybackground.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
+
 h1 {
-	font-size: 50px;
-	font-family: verdana;
-	text-align:center;	
-	color: white;
+    font-size: 50px;
+    font-family: verdana;
+    text-align: center;
+    color: white;
+    padding-top: 1%;
 }
+
 p {
-	color: white;
-	font-family: courier;
+    color: white;
+    font-family: courier;
+    padding-top: 10px;
+    padding-bottom: 50px;
 }
 
-.sidenav {
-	width: 150px;
-	position: sticky;
-	z-index: 1;
-	top: 50%;
-	left: 0;
-	background:transparent;
-	overflow-x: hidden;
-	padding: 8px 0;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.335);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-.sidenav a {
-	padding : 6px 8px 6px 16px;
-	text-decoration: none;
-	font-size: 15px;
-	color: white;
-	display: block;
+nav {
+    float: left;
 }
 
-.sidenav a:hover {
-	color: #04d9ff;
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #04d9ff;
 }
