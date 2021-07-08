@@ -1,9 +1,6 @@
-* {
-	box-sizing: border-box;
-}
-
 body {
 	margin: 0;
+	font-family: sans-serif;
 }
 
 a {
@@ -11,7 +8,8 @@ a {
 	text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
 	text-decoration: underline;
 }
 
@@ -39,6 +37,7 @@ p {
 	position: absolute;
 	top: 0;
 	left: 0;
+	clear: both;
 }
 
 .navbar-links li {
@@ -48,13 +47,13 @@ p {
 
 .navbar-links a {
 	display: block;
-	text-decoration: none;
-	padding: 12px;
+	padding: 20px;
 	color: #fff;
 	font-family: monospace;
 }
 
-.navbar-links a:not(.active):hover {
+.navbar-links a:not(.active):hover,
+.navbar-links a:not(.active):focus {
 	background-color: #222;
 	text-decoration: none;
 }
@@ -73,6 +72,7 @@ p {
 	background-size: cover;
 	background-position: center;
 	padding-top: 250px;
+	box-sizing: border-box;
 }
 
 .group-name {
@@ -105,18 +105,19 @@ p {
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: center;
+	box-sizing: border-box;
 }
 
 .card {
 	display: flex;
 	flex-direction: column;
-	flex: 1;
+	flex-grow: 1;
+	flex-shrink: 0;
 	max-width: 300px;
 	margin-left: 20px;
 	margin-right: 20px;
 	align-items: center;
-	font-family: sans-serif;
-	margin-bottom: 40px;
+	margin-bottom: 80px;
 	color: #222;
 }
 
@@ -132,7 +133,7 @@ p {
 }
 
 .card-container {
-	margin-top: 20px;
+	margin-top: 40px;
 }
 
 .student-name {
@@ -145,14 +146,13 @@ p {
 	padding: 8px;
 	background-color: #ddd;
 	text-align: center;
-	width: 100%;
-	text-decoration: none;
 	color: #222;
 	font-weight: bold;
 	border-radius: 4px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
 	background-color: #bbb;
 	text-decoration: none;
 }
