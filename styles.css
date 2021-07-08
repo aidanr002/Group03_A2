@@ -3,8 +3,7 @@
 }
 
 body {
-	/* TODO (downfallcat) We need to either compress this image or find another one since 1.2MB is too big for a background. */
-	background-image: url("images/binarybackground.jpeg");
+	background-image: url("images/background.jpg");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
