@@ -1,32 +1,73 @@
-html {
-    box-sizing: border-box;
+* {
+    box-sizing: box-sizing;
 }
 
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
+body {
+    background-image: url('images/binarybackground.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
 }
 
+h1 {
+    font-size: 50px;
+    font-family: verdana;
+    text-align: center;
+    color: white;
+    padding-top: 2%;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: verdana;
+    text-align: left;
+    color: white;
+    padding-left: 10%;
+}
+
+p {
+    color: white;
+    font-family: courier;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.855);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav {
+    float: left;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover:not(.active) {
+    background-color: #111;
+}
+
+/* IDs and Classes */
 .column {
     float: left;
     width: 10%;
     margin-bottom: 2%;
     margin-left: 4%;
     padding: 0 8px;
-}
-
-@media screen and (max-width: 650px) {
-    .nav {
-        padding-top: 15px;
-    }
-    .nav a {
-        font-size: 18px;
-    }
-    .column {
-        width: 100%;
-        display: block;
-    }
 }
 
 .card {
@@ -64,29 +105,6 @@ html {
     background-color: #555;
 }
 
-body {
-    background-image: url('images/binarybackground.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-h1 {
-    font-size: 50px;
-    font-family: verdana;
-    text-align: center;
-    color: white;
-    padding-top: 2%;
-}
-
-h2 {
-    font-size: 30px;
-    font-family: verdana;
-    text-align: left;
-    color: white;
-    padding-left: 10%;
-}
-
 .main_div {
     position: relative;
     margin-left: auto;
@@ -95,46 +113,25 @@ h2 {
     width: 2000px;
 }
 
-p {
-    color: white;
-    font-family: courier;
-    padding-top: 10px;
-    padding-bottom: 50px;
-}
-
 .section {
     margin-top: auto;
     background-color: rgba(0, 0, 0, 0.855);
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.855);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-nav {
-    float: left;
-}
-
-nav a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover:not(.active) {
-    background-color: #111;
-}
-
 .active {
     background-color: #04d9ff;
+}
+
+/* Media rules */
+@media screen and (max-width: 650px) {
+    .nav {
+        padding-top: 15px;
+    }
+    .nav a {
+        font-size: 18px;
+    }
+    .column {
+        width: 100%;
+        display: block;
+    }
 }
