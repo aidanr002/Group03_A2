@@ -1,5 +1,5 @@
 * {
-	box-sizing: box-sizing;
+	box-sizing: border-box;
 }
 
 body {
@@ -8,8 +8,9 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
+	background-position: center;
 	color: #fff;
-    margin: 0;
+	margin: 0;
 }
 
 p {
