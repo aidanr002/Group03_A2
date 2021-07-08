@@ -52,8 +52,8 @@ p {
 	font-family: monospace;
 }
 
-.navbar-links a:not(.active):hover,
-.navbar-links a:not(.active):focus {
+.navbar-links a:hover,
+.navbar-links a:focus {
 	background-color: #222;
 	text-decoration: none;
 }
