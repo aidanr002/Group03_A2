@@ -52,7 +52,7 @@ p {
 	font-family: monospace;
 }
 
-.navbar-links a:not(:active):hover {
+.navbar-links a:not(.active):hover {
 	background-color: #222;
 }
 
