@@ -1,36 +1,21 @@
 * {
-    box-sizing: box-sizing;
+	box-sizing: box-sizing;
 }
 
 body {
-    background-image: url('images/binarybackground.jpeg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+	/* TODO (downfallcat) We need to either compress this image or find another one since 1.2MB is too big for a background. */
+	background-image: url("images/binarybackground.jpeg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	color: #fff;
     margin: 0;
 }
 
-h1 {
-    font-size: 50px;
-    font-family: verdana;
-    text-align: center;
-    color: white;
-    padding-top: 2%;
-}
-
-h2 {
-    font-size: 30px;
-    font-family: verdana;
-    text-align: left;
-    color: white;
-    padding-left: 10%;
-}
-
 p {
-    color: white;
-    font-family: courier;
-    padding-top: 10px;
-    padding-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: justify;
 }
 
 ul {
@@ -38,7 +23,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.855);
+    background-color: rgba(0,0,0,0.8);
     position: fixed;
     top: 0;
     width: 100%;
@@ -51,7 +36,6 @@ nav {
 
 nav a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -70,7 +54,6 @@ nav a:hover:not(.active) {
 }
 
 .group-name {
-	color: #fff;
 	font-family: monospace;
 	font-size: 40px;
 	text-align: center;
@@ -81,7 +64,6 @@ nav a:hover:not(.active) {
 
 .description {
 	text-align: center;
-	color: #fff;
 	font-size: 20px;
 	font-weight: normal;
 	font-family: monospace;
@@ -111,16 +93,12 @@ nav a:hover:not(.active) {
     display: table;
 }
 
-.title {
-    color: white;
-}
 
 .button {
     border: none;
     outline: 0;
     display: inline-block;
     padding: 8px;
-    color: white;
     background-color: #000;
     text-align: center;
     cursor: pointer;
@@ -137,11 +115,6 @@ nav a:hover:not(.active) {
     margin-right: auto;
     height: auto;
     width: 2000px;
-}
-
-.section {
-    margin-top: auto;
-    background-color: rgba(0, 0, 0, 0.855);
 }
 
 .active {
