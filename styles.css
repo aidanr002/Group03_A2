@@ -19,34 +19,48 @@ p {
 	text-align: justify;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgba(0,0,0,0.8);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
-
-nav {
-    float: left;
-}
-
-nav a {
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-nav a:hover:not(.active) {
-    background-color: #111;
-}
-
 /* IDs and Classes */
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+}
+
+.navbar-links {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	background-color: rgba(0,0,0,0.8);
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.navbar-links li {
+	display: block;
+	float: left;
+}
+
+.navbar-links a {
+	display: block;
+	text-decoration: none;
+	padding: 12px;
+	color: #fff;
+	font-family: monospace;
+}
+
+.navbar-links a:not(:active):hover {
+	background-color: #222;
+}
+
+.navbar-links .active {
+	background-color: #444;
+	font-weight: bold;
+}
+
 .section-1 {
 	width: 100%;
 	height: 300px;
