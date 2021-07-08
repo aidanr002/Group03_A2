@@ -141,6 +141,13 @@ p {
 	margin-bottom: 20px;
 }
 
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 1;
+	margin-right: 5px;
+}
+
 .button {
 	display: block;
 	padding: 8px;
