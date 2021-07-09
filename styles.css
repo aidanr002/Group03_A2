@@ -25,40 +25,38 @@ p {
 }
 
 #navbar-toggle {
+	width: 40px;
+	height: 40px;
 	position: absolute;
+	z-index: 2;
 	top: 10px;
 	right: 10px;
-	z-index: 2;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	display: block;
-	font-size: 40px;
 	color: #fff;
+	font-size: 40px;
 	font-weight: normal;
 	line-height: 1;
+	text-align: center;
 	cursor: pointer;
 }
 
 .navbar {
+	width: 100%;
 	position: absolute;
+	z-index: 1;
 	top: 0;
 	left: 0;
-	z-index: 1;
-	width: 100%;
 }
 
 .navbar-links {
-	list-style: none;
-	margin: 0;
-	padding-left: 0;
-	background-color: rgba(0,0,0,0.8);
+	display: block;
 	width: 100%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	clear: both;
-	display: block;
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+	background-color: rgba(0,0,0,0.8);
 }
 
 .navbar-links li {
@@ -88,41 +86,41 @@ p {
 	width: 100%;
 	height: 500px;
 	position: relative;
-	background-image: url("images/background.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
 	padding-top: 250px;
 	box-sizing: border-box;
+	background-image: url("images/background.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .group-name {
+	margin-top: 0;
+	margin-bottom: 20px;
 	color: #fff;
 	font-family: monospace;
 	font-size: 40px;
-	text-align: center;
-	margin-top: 0;
-	margin-bottom: 20px;
 	font-weight: bold;
+	text-align: center;
 	text-shadow: 0 2px 4px #000;
 }
 
 .description {
-	color: #fff;
-	text-align: center;
+	margin: 0;
+	font-family: monospace;
 	font-size: 20px;
 	font-weight: normal;
-	font-family: monospace;
-	margin: 0;
+	color: #fff;
+	text-align: center;
 	text-shadow: 0 2px 4px #000;
 }
 
 .section-2 {
 	position: relative;
-	background-color: #f9f9f9;
 	padding-left: 100px;
 	padding-right: 100px;
 	box-sizing: border-box;
+	background-color: #f9f9f9;
 }
 
 .section-title {
@@ -145,50 +143,54 @@ p {
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
+	flex: none;
+	width: 300px;
 	margin-left: 20px;
 	margin-right: 20px;
-	align-items: center;
 	margin-bottom: 40px;
-	color: #222;
-	box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
-	border-radius: 4px;
-	padding: 20px;
+	padding: 40px;
 	background-color: #fff;
-	width: 300px;
+	box-shadow: 0 0 16px 0 rgba(0,0,0,0.1);
+	color: #222;
+	border-radius: 4px;
 }
 
-.headshot {
-	max-width: 100%;
-	max-height: 100%;
-	height: 150px;
+.profile {
+	display: block;
 	width: 150px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
 	object-fit: cover;
 	object-position: center;
 	border-radius: 50%;
-	overflow: hidden;
-}
-
-.card-container {
-	margin-top: 40px;
 }
 
 .student-name {
-	margin-top: 0;
+	margin-top: 40px;
 	margin-bottom: 20px;
+}
+
+.info-container {
+	display: flex;
+	justify-content: flex-start;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	max-width: 300px;
+	overflow: hidden;
 }
 
 .icon {
 	display: inline-block;
-	vertical-align: top;
-	line-height: 1;
-	margin-right: 10px;
-	height: 16px;
+	flex: none;
 	width: 16px;
+	height: 16px;
+	margin-right: 10px;
 	background-size: 16px;
 	background-repeat: no-repeat;
 	background-position: center;
+	line-height: 1;
+	vertical-align: top;
 	opacity: 0.5;
 }
 
@@ -202,11 +204,11 @@ p {
 
 .button {
 	display: block;
-	padding: 8px;
+	padding: 10px;
 	background-color: #ddd;
-	text-align: center;
 	color: #222;
 	font-weight: bold;
+	text-align: center;
 	border-radius: 4px;
 }
 
