@@ -6,11 +6,6 @@ body {
 a {
 	color: #003c78;
 	text-decoration: none;
-	max-width: 300px;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: inline-block;
 }
 
 a:hover,
@@ -104,20 +99,34 @@ p {
 .section-2 {
 	position: relative;
 	background-color: #f8f8f8;
-	width: 100%;
-	padding: 100px;
+	padding-left: 100px;
+	padding-right: 100px;
+	box-sizing: border-box;
+}
+
+.section-title {
+	margin-top: 0;
+	margin-bottom: 80px;
+	padding-top: 80px;
+}
+
+.section-link {
+	color: #888;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+.student-cards {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: center;
-	box-sizing: border-box;
 }
 
 .card {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
-	flex-shrink: 0;
+	flex: 1 0 300px;
 	max-width: 300px;
 	margin-left: 20px;
 	margin-right: 20px;
