@@ -6,6 +6,11 @@ body {
 a {
 	color: #003c78;
 	text-decoration: none;
+	max-width: 300px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: inline-block;
 }
 
 a:hover,
@@ -143,9 +148,23 @@ p {
 
 .icon {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	line-height: 1;
-	margin-right: 5px;
+	margin-right: 10px;
+	height: 16px;
+	width: 16px;
+	background-size: 16px;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: 0.5;
+}
+
+.icon.github {
+	background-image: url("assets/github.svg");
+}
+
+.icon.email {
+	background-image: url("assets/email.svg");
 }
 
 .button {
