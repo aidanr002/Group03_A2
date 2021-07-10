@@ -13,6 +13,10 @@ a:focus {
 	text-decoration: underline;
 }
 
+a:focus {
+	outline: 0;
+}
+
 p {
 	margin-top: 20px;
 	margin-bottom: 20px;
