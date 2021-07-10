@@ -8,13 +8,13 @@ a {
 	text-decoration: none;
 }
 
-a:hover,
-a:focus {
+a:hover {
 	text-decoration: underline;
 }
 
 a:focus {
-	outline: 0;
+	outline: 1px solid currentColor;
+	outline-offset: 1px;
 }
 
 p {
@@ -75,10 +75,17 @@ p {
 	font-family: monospace;
 }
 
+.navbar-links a:hover {
+	text-decoration: none;
+}
+
+.navbar-links a:focus {
+	outline: 0;
+}
+
 .navbar-links a:hover,
 .navbar-links a:focus {
 	background-color: #222;
-	text-decoration: none;
 }
 
 .navbar-links .active {
@@ -180,7 +187,6 @@ p {
 	display: flex;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	overflow: hidden;
 }
 
 .info-container a {
@@ -221,10 +227,17 @@ p {
 	border-radius: 4px;
 }
 
+.button:hover {
+	text-decoration: none;
+}
+
+.button:focus {
+	outline: 0;
+}
+
 .button:hover,
 .button:focus {
 	background-color: #bbb;
-	text-decoration: none;
 }
 
 /* Media rules */
